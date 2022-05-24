@@ -1,0 +1,35 @@
+"$schema": https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/broombridge-0.1.schema.json
+
+bibliography:
+  - { url: "https://www.nwchem-sw.org" }
+format: { version: "0.2" }
+integral_sets:
+  - basis_set: { name: sto-6g, type: gaussian }
+    coulomb_repulsion: { units: hartree, value: 0.0 }
+    energy_offset: { units: hartree, value: 0.0 }
+    hamiltonian:
+      one_electron_integrals:
+        format: sparse
+        units: hartree
+        values:
+          - [2, 1, 1.0]
+      two_electron_integrals:
+        format: sparse
+        index_convention: mulliken
+        units: hartree
+        values:
+          - [1, 1, 1, 1, 0.0]
+    initial_state_suggestions:
+      - state:
+          energy: { units: hartree, value: 0.0 }
+          label: "|G>"
+          superposition:
+            - [1.0, (1b)+, (2a)+, "|vacuum>"] # |10>|01>
+    # initial_state_suggestions:
+    # - state:
+    #     energy: {units: hartree, value: 0.0}
+    #     label: '|G>'
+    #     superposition:
+    #     - [0.9950000486809176, (1a)+, (2a)+, (1b)+, (2b)+, '|vacuum>']
+    #     - [-0.09987443679426472, (3a)+, (3b)+, (2b), (2a), (1a)+, (2a)+, (1b)+, (2b)+,
+    #       '|vacuum>']

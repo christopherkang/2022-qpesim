@@ -1,0 +1,245 @@
+
+"$schema": https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/broombridge-0.1.schema.json
+
+bibliography:
+- url: https://www.nwchem-sw.org
+format:
+  version: '0.1'
+generator:
+  source: nwchem
+  version: '6.8'
+integral_sets:
+- basis_set:
+    name: cc-pvtz
+    type: gaussian
+  coulomb_repulsion:
+    units: hartree
+    value: 0.7138777841233577
+  energy_offset:
+    units: hartree
+    value: -0.0
+  fci_energy:
+    lower: -1.246669512948751
+    units: hartree
+    upper: -1.0466695129487509
+    value: -1.146669512948751
+  geometry:
+    atoms:
+    - coords:
+      - -0.7004
+      - 0.0
+      - 0.0
+      name: H
+    - coords:
+      - 0.7004
+      - 0.0
+      - 0.0
+      name: H
+    coordinate_system: cartesian
+    symmetry: c1
+    units: bohr
+  hamiltonian:
+    one_electron_integrals:
+      format: sparse
+      units: hartree
+      values:
+      - - 1
+        - 1
+        - -1.2525429488
+      - - 3
+        - 1
+        - -0.1307904182
+      - - 2
+        - 2
+        - -0.4693676896
+      - - 4
+        - 2
+        - -0.2097727745
+      - - 3
+        - 3
+        - -0.3565707292
+      - - 4
+        - 4
+        - -0.2474410242
+    two_electron_integrals:
+      format: sparse
+      index_convention: mulliken
+      units: hartree
+      values:
+      - - 1
+        - 1
+        - 1
+        - 1
+        - 0.6582306098
+      - - 2
+        - 1
+        - 2
+        - 1
+        - 0.0401838351
+      - - 3
+        - 1
+        - 1
+        - 1
+        - 0.1307904182
+      - - 3
+        - 1
+        - 3
+        - 1
+        - 0.0488071592
+      - - 3
+        - 1
+        - 2
+        - 2
+        - 0.0226363311
+      - - 4
+        - 1
+        - 2
+        - 1
+        - 0.055559476
+      - - 4
+        - 1
+        - 4
+        - 1
+        - 0.0922563533
+      - - 4
+        - 1
+        - 3
+        - 2
+        - -0.0095641932
+      - - 2
+        - 2
+        - 1
+        - 1
+        - 0.3371897757
+      - - 2
+        - 2
+        - 2
+        - 2
+        - 0.2903110488
+      - - 3
+        - 2
+        - 2
+        - 1
+        - -0.0213345802
+      - - 3
+        - 2
+        - 3
+        - 2
+        - 0.0393026982
+      - - 4
+        - 2
+        - 1
+        - 1
+        - 0.1326661253
+      - - 4
+        - 2
+        - 3
+        - 1
+        - 0.0344468286
+      - - 4
+        - 2
+        - 2
+        - 2
+        - 0.0434143395
+      - - 4
+        - 2
+        - 4
+        - 2
+        - 0.0523031625
+      - - 4
+        - 2
+        - 3
+        - 3
+        - 0.0394947099
+      - - 3
+        - 3
+        - 1
+        - 1
+        - 0.34302938
+      - - 3
+        - 3
+        - 3
+        - 1
+        - 0.0286724877
+      - - 3
+        - 3
+        - 2
+        - 2
+        - 0.2614638476
+      - - 3
+        - 3
+        - 3
+        - 3
+        - 0.2661184719
+      - - 4
+        - 3
+        - 2
+        - 1
+        - 0.0241044453
+      - - 4
+        - 3
+        - 4
+        - 1
+        - 0.03214266
+      - - 4
+        - 3
+        - 3
+        - 2
+        - -0.0181076777
+      - - 4
+        - 3
+        - 4
+        - 3
+        - 0.0216780341
+      - - 4
+        - 4
+        - 1
+        - 1
+        - 0.4781567879
+      - - 4
+        - 4
+        - 3
+        - 1
+        - 0.0698838685
+      - - 4
+        - 4
+        - 2
+        - 2
+        - 0.3146952951
+      - - 4
+        - 4
+        - 4
+        - 2
+        - 0.0942192106
+      - - 4
+        - 4
+        - 3
+        - 3
+        - 0.2923360211
+      - - 4
+        - 4
+        - 4
+        - 4
+        - 0.4049606919
+  initial_state_suggestions:
+  - state:
+      energy:
+        units: hartree
+        value: -1.146669512948751
+      label: '|G>'
+      superposition:
+      - - 1.0
+        - (1a)+
+        - (1b)+
+        - '|vacuum>'
+  metadata:
+    molecule_name: unknown
+  n_electrons: 2
+  n_orbitals: 4
+  scf_energy:
+    units: hartree
+    value: -1.1329775
+  scf_energy_offset:
+    units: hartree
+    value: -0.0
+
