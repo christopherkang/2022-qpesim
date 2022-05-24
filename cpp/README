@@ -1,0 +1,33 @@
+
+Build instructions:
+
+$ cd yaml-cpp
+$ git submodule init 
+$ git submodule update 
+$ mkdir build && cd build
+$ cmake .. 
+
+If you need to specify a compiler, please do the following instead of the above cmake command:
+
+$ cmake .. -DCMAKE_CXX_COMPILER=compiler_name
+
+Then continue:
+
+$ make
+$ cd ../..
+$ make
+
+You'll also need to install and link Intel's MKL library. 
+
+You can now run the code as 
+
+$ ./qpesim [folder in /qsharp-verify/broombridge to use] [precision] [number of steps]
+
+And pipe the output to a file.
+
+Key files:
+
+* main.cc - Has the main to show start of execution. 
+* hamiltonian.hpp/cc - Implements the Hamiltonian interface.
+* state_vector.hpp - Implements the StateVector data format
+* time_evolution_over_terms.hpp - Implements the update process for the StateVector

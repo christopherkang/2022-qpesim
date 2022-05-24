@@ -1,0 +1,8 @@
+*~
+*.o
+yaml-cpp/build
+qpesim
+tests
+*.dSYM/
+doctest-master/
+yaml-cpp/
